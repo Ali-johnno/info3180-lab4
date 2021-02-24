@@ -1,3 +1,27 @@
 body {
     padding-top: 5rem;
 }
+
+.picture{
+    width: 350px;
+    height: 350px;
+}
+
+.pictures{
+    list-style-type: none;
+}
+
+.picture_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.upload_field{
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    padding-bottom: 10px;
+}

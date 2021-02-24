@@ -8,12 +8,13 @@
 <body>
     {%extends 'base.html'%}
     {%block main%}
+    <div class="picture_grid">
         {%for image in images%}
             {%if image.endswith(('.png', '.jpg', '.jpeg')) %}
-                <li>{{image}}</li>
-                <img src="{{url_for('get_image', filename=image)}}">
+                <li class="pictures"><img class= "picture" src="{{url_for('get_image', filename=image)}}" alt="photograph"></li>
             {%endif%}    
         {%endfor%}
+    </div>
     {%endblock%}
     
 </body>
