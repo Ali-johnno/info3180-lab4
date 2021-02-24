@@ -8,7 +8,6 @@ class Config(object):
     USERNAME = os.environ.get('ADMIN_USERNAME') or 'admin'
     PASSWORD = os.environ.get('ADMIN_PASSWORD') or 'Password123'
     UPLOAD_FOLDER = './uploads'
-
     app = Flask(__name__)
 
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
